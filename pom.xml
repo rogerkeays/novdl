@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jamaica.jsf</groupId>
+  <artifactId>novdl</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>NoVDL</name>
+
+  <dependencies>
+ 
+    <!-- java layer -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.14.4</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- network layer -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!--
+       ui layer
+       JSF > 2.2.6 breaks RichFaces
+       JSF > 2.2.2 breaks Bean Validation [https://java.net/jira/browse/JAVASERVERFACES-3183]
+    -->
+    <dependency>
+      <groupId>com.sun.faces</groupId>
+      <artifactId>jsf-api</artifactId>
+      <version>2.2.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.faces</groupId>
+      <artifactId>jsf-impl</artifactId>
+      <version>2.2.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>el-impl</artifactId>
+      <version>2.2</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!--
+     As the unit tests in main src tree we cannot use test scope for
+     the dependencies (they don't compile). Provided scope is used for
+     compile AND test but not for runtime so that works perfectly.
+    -->
+
+    <!-- testing layer -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.8</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>2.24.1</version>
+      <scope>provided</scope> 
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <debug>true</debug>
+          <showDeprecation>false</showDeprecation>
+        </configuration>
+      </plugin>
+       
+      <!-- unit test configuration -->
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.12</version>
+        <configuration>
+          <testSourceDirectory>src</testSourceDirectory>
+          <testClassesDirectory>target/classes</testClassesDirectory>
+          <includes>
+            <include>**/*.java</include>
+            <include>**/*Test.java</include>
+          </includes>
+          <excludes><exclude>NONE</exclude></excludes>
+          <runOrder>alphabetical</runOrder>
+        </configuration>
+      </plugin>
+    </plugins>
+    
+    <!-- 
+     We use a single src tree for everything but only the META-INF directory
+     should be copied to the classpath.
+    -->
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <includes>
+          <include>META-INF/*</include>
+          <include>META-INF/**/*</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>
