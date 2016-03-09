@@ -1,4 +1,3 @@
-
 package jamaica.faces.component;
 
 import javax.faces.component.UIComponent;
