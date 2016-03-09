@@ -1,4 +1,4 @@
-package jamaica.faces.novdl.html;
+package jamaica.faces.component.html;
 
 import jamaica.faces.component.html.FluentHtmlHead;
 import javax.faces.component.html.HtmlHead;

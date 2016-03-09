@@ -1,4 +1,4 @@
-package jamaica.faces.novdl.html;
+package jamaica.faces.component.html;
 
 import jamaica.faces.component.html.FluentHtmlInputText;
 import javax.faces.component.html.HtmlInputText;

@@ -1,4 +1,4 @@
-package jamaica.faces.novdl.html;
+package jamaica.faces.component.html;
 
 import javax.faces.model.DataModel;
 import javax.faces.component.html.HtmlDataTable;
