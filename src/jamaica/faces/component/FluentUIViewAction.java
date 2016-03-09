@@ -14,9 +14,17 @@ public interface FluentUIViewAction<T extends FluentUIViewAction> extends
     public default T onPostback(boolean onPostback) {
         setOnPostback(onPostback); return (T) this;
     }
+    public default T onPostbackx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "onPostback", expression); return (T) this;
+    }
 
     public void setPhase(String phase);
     public default T phase(String phase) {
         setPhase(phase); return (T) this;
+    }
+    public default T phasex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "phase", expression); return (T) this;
     }
 }

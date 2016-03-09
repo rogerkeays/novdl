@@ -15,6 +15,8 @@ import javax.faces.validator.Validator;
 public interface FluentEditableValueHolder<T extends FluentEditableValueHolder> 
         extends EditableValueHolder {
 
+    public FacesContext getFacesContext();
+
     public default T validator(Validator validator) {
         addValidator(validator); return (T) this;
     }
@@ -26,20 +28,16 @@ public interface FluentEditableValueHolder<T extends FluentEditableValueHolder>
     public default T immediate(boolean immediate) {
         setImmediate(immediate); return (T) this;
     }
-
-    public default T localValueSet(boolean localValueSet) {
-        setLocalValueSet(localValueSet); return (T) this;
+    public default T immediatex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "immediate", expression); return (T) this;
     }
 
     public default T required(boolean required) {
         setRequired(required); return (T) this;
     }
-
-    public default T submittedValue(Object submittedValue) {
-        setSubmittedValue(submittedValue); return (T) this;
-    }
-
-    public default T valid(boolean valid) {
-        setValid(valid); return (T) this;
+    public default T requiredx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "required", expression); return (T) this;
     }
 }

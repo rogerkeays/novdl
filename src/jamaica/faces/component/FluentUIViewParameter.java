@@ -10,8 +10,14 @@ import javax.faces.context.FacesContext;
 public interface FluentUIViewParameter<T extends FluentUIViewParameter> extends 
             FluentUIInput<T> {
 
+    public FacesContext getFacesContext();
+
     public void setName(String name);
     public default T name(String name) {
         setName(name); return (T) this;
+    }
+    public default T namex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "name", expression); return (T) this;
     }
 }

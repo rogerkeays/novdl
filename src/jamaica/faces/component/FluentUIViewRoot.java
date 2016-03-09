@@ -13,6 +13,8 @@ import javax.faces.context.FacesContext;
 public interface FluentUIViewRoot<T extends FluentUIViewRoot> extends 
             FluentUIComponent<T> {
 
+    public FacesContext getFacesContext();
+
     public void setAfterPhaseListener(MethodExpression newAfterPhase);
     public default T afterPhaseListener(MethodExpression newAfterPhase) {
         setAfterPhaseListener(newAfterPhase); return (T) this;
@@ -23,24 +25,22 @@ public interface FluentUIViewRoot<T extends FluentUIViewRoot> extends
         setBeforePhaseListener(newBeforePhase); return (T) this;
     }
 
-    public void setInView(boolean isInView);
-    public default T inView(boolean isInView) {
-        setInView(isInView); return (T) this;
-    }
-
     public void setLocale(Locale locale);
     public default T locale(Locale locale) {
         setLocale(locale); return (T) this;
+    }
+    public default T localex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "locale", expression); return (T) this;
     }
 
     public void setRenderKitId(String renderKitId);
     public default T renderKitId(String renderKitId) {
         setRenderKitId(renderKitId); return (T) this;
     }
-
-    public void setViewId(String viewId);
-    public default T viewId(String viewId) {
-        setViewId(viewId); return (T) this;
+    public default T renderKitIdx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "renderKitId", expression); return (T) this;
     }
 
     public void addComponentResource(FacesContext context, UIComponent componentResource);

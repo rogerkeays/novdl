@@ -14,9 +14,15 @@ import javax.faces.model.DataModel;
 public interface FluentUIData<T extends FluentUIData> 
             extends FluentUIComponent<T> {
 
+    public FacesContext getFacesContext();
+
     public void setFirst(int first);
     public default T first(int first) {
         setFirst(first); return (T) this; 
+    }
+    public default T firstx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "first", expression); return (T) this;
     }
 
     public void setFooter(UIComponent footer);
@@ -33,20 +39,36 @@ public interface FluentUIData<T extends FluentUIData>
     public default T rowIndex(int rowIndex) {
         setRowIndex(rowIndex); return (T) this; 
     }
+    public default T rowIndexx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "rowIndex", expression); return (T) this;
+    }
 
     public void setRows(int rows);
     public default T rows(int rows) { 
         setRows(rows); return (T) this; 
+    }
+    public default T rowsx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "rows", expression); return (T) this;
     }
 
     public void setRowStatePreserved(boolean preserveComponentState);
     public default T rowStatePreserved(boolean preserveComponentState) { 
         setRowStatePreserved(preserveComponentState); return (T) this; 
     }
+    public default T rowStatePreservedx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "rowStatePreserved", expression); return (T) this;
+    }
 
     public void setValue(Object value);
     public default T value(Object value) { 
         setValue(value); return (T) this; 
+    }
+    public default T valuex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "value", expression); return (T) this;
     }
 
     public void setVar(String var);

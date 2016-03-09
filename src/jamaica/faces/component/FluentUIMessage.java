@@ -10,23 +10,41 @@ import javax.faces.context.FacesContext;
 public interface FluentUIMessage<T extends FluentUIMessage> extends 
             FluentUIComponent<T> {
 
+    public FacesContext getFacesContext();
+
     public void setFor(String newFor);
-    public default T forr(String newFor) {
+    public default T for0(String newFor) {
         setFor(newFor); return (T) this;
+    }
+    public default T forx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "for", expression); return (T) this;
     }
 
     public void setRedisplay(boolean redisplay);
     public default T redisplay(boolean redisplay) {
         setRedisplay(redisplay); return (T) this;
     }
+    public default T redisplayx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "redisplay", expression); return (T) this;
+    }
 
     public void setShowDetail(boolean showDetail);
     public default T showDetail(boolean showDetail) {
         setShowDetail(showDetail); return (T) this;
     }
+    public default T showDetailx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "showDetail", expression); return (T) this;
+    }
 
     public void setShowSummary(boolean showSummary);
     public default T showSummary(boolean showSummary) {
         setShowSummary(showSummary); return (T) this;
+    }
+    public default T showSummaryx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "showSummary", expression); return (T) this;
     }
 }

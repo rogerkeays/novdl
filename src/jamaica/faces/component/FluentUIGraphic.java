@@ -13,8 +13,14 @@ import javax.faces.model.DataModel;
 public interface FluentUIGraphic<T extends FluentUIGraphic> 
             extends FluentUIComponent<T> {
 
+    public FacesContext getFacesContext();
+
     public void setValue(Object value);
     public default T value(Object value) { 
         setValue(value); return (T) this; 
+    }
+    public default T valuex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "value", expression); return (T) this;
     }
 }

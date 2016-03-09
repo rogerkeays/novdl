@@ -13,7 +13,13 @@ import javax.faces.component.StateHolder;
 public interface FluentStateHolder<T extends FluentStateHolder> 
         extends StateHolder {
 
+    public FacesContext getFacesContext();
+
     public default T transient0(boolean transient0) {
         setTransient(transient0); return (T) this;
+    }
+    public default T transientx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "transient", expression); return (T) this;
     }
 }

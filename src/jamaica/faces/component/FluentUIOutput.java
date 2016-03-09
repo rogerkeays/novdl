@@ -17,4 +17,10 @@ public interface FluentUIOutput<T extends FluentUIOutput> extends
         out.setValue(verbatim);
         return out;
     }
+    public static UIOutput f_verbatimx(String expression) {
+        UIOutput out = new UIOutput();
+        set_value_expression(FacesContext.getCurrentInstance(), out,
+                "value", expression);
+        return out;
+    }
 }

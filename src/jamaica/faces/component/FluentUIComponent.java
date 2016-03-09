@@ -14,14 +14,11 @@ import javax.el.ValueExpression;
 public interface FluentUIComponent<T extends FluentUIComponent> 
             extends FluentStateHolder<T> {
 
+    public FacesContext getFacesContext();
+
     public void setId(String id);
     public default T id(String id) {
         setId(id); return (T) this; 
-    }
-
-    public void setInView(boolean isInView);
-    public default T inView(boolean isInView) {
-        setInView(isInView); return (T) this; 
     }
 
     public void setParent(UIComponent parent);
@@ -33,10 +30,9 @@ public interface FluentUIComponent<T extends FluentUIComponent>
     public default T rendered(boolean rendered) {
         setRendered(rendered); return (T) this; 
     }
-
-    public void setRendererType(String rendererType);
-    public default T rendererType(String rendererType) {
-        setRendererType(rendererType); return (T) this; 
+    public default T renderedx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "rendered", expression); return (T) this;
     }
 
     public void setValueExpression(String name, ValueExpression binding);
