@@ -1,9 +1,9 @@
 package jamaica.faces.component.html;
 
-import jamaica.faces.component.FluentUIOutput;
+import jamaica.faces.component.FluentUIMessages;
 
 public interface FluentHtmlMessages<T extends FluentHtmlMessages>
-            extends FluentUIOutput<T> {
+            extends FluentUIMessages<T> {
 
     public void setDir(String dir);
     public default T dir(String dir) {

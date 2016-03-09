@@ -1,9 +1,9 @@
 package jamaica.faces.component.html;
 
-import jamaica.faces.component.FluentUIOutput;
+import jamaica.faces.component.FluentUIPanel;
 
 public interface FluentHtmlPanelGroup<T extends FluentHtmlPanelGroup>
-            extends FluentUIOutput<T> {
+            extends FluentUIPanel<T> {
 
     public void setLayout(String layout);
     public default T layout(String layout) {

@@ -44,8 +44,11 @@ public interface FluentUIComponent<T extends FluentUIComponent>
     }
 
     public List<UIComponent> getChildren();
-    public default T add(UIComponent child) {
-        getChildren().add(child); return (T) this;
+    public default T add(UIComponent... children) {
+        for (UIComponent child : children) {
+            getChildren().add(child);
+        }
+        return (T) this;
     }
 }
 

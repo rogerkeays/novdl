@@ -1,9 +1,9 @@
 package jamaica.faces.component.html;
 
-import jamaica.faces.component.FluentUIOutput;
+import jamaica.faces.component.FluentUIGraphic;
 
 public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
-            extends FluentUIOutput<T> {
+            extends FluentUIGraphic<T> {
 
     public void setAlt(String alt);
     public default T alt(String alt) {

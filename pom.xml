@@ -14,10 +14,10 @@
  
     <!-- java layer -->
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.14.4</version>
-      <scope>provided</scope>
+      <groupId>jamaica</groupId>
+      <artifactId>core</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- network layer -->
@@ -64,12 +64,6 @@
       <artifactId>testng</artifactId>
       <version>6.8</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>2.24.1</version>
-      <scope>provided</scope> 
     </dependency>
   </dependencies>
   

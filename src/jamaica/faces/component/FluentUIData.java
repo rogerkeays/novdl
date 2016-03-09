@@ -12,11 +12,6 @@ import javax.faces.component.UIComponent;
 public interface FluentUIData<T extends FluentUIData> 
             extends FluentUIComponent<T> {
 
-    void setDataModel(DataModel model);
-    public default T dataModel(DataModel model) {
-        setDataModel(model); return (T) this;
-    }
-
     public void setFirst(int first);
     public default T first(int first) {
         setFirst(first); return (T) this; 

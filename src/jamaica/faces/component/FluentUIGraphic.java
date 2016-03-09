@@ -6,10 +6,9 @@ import javax.faces.component.UIComponent;
 
 
 /**
- * This interface adds fluent methods on top of the standard
- * methods.
+ * This interface adds fluent methods on top of the standard methods.
  */
-public interface FluentUIGraphic<T extends FluentUIData> 
+public interface FluentUIGraphic<T extends FluentUIGraphic> 
             extends FluentUIComponent<T> {
 
     public void setValue(Object value);
