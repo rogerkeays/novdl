@@ -12,15 +12,27 @@ public interface FluentHtmlColumn<T extends FluentHtmlColumn>
     public default T footerClass(String footerClass) {
         setFooterClass(footerClass); return (T) this;
     }
+    public default T footerClassx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "footerClass", expression); return (T) this;
+    }
 
     public void setHeaderClass(String headerClass);
     public default T headerClass(String headerClass) {
         setHeaderClass(headerClass); return (T) this;
     }
+    public default T headerClassx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "headerClass", expression); return (T) this;
+    }
 
     public void setRowHeader(boolean rowHeader);
     public default T rowHeader(boolean rowHeader) {
         setRowHeader(rowHeader); return (T) this;
+    }
+    public default T rowHeaderx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "rowHeader", expression); return (T) this;
     }
 }
 

@@ -12,10 +12,18 @@ public interface FluentHtmlBody<T extends FluentHtmlBody>
     public default T dir(String dir) {
         setDir(dir); return (T) this;
     }
+    public default T dirx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "dir", expression); return (T) this;
+    }
 
     public void setLang(String lang);
     public default T lang(String lang) {
         setLang(lang); return (T) this;
+    }
+    public default T langx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "lang", expression); return (T) this;
     }
 
     public void setOnclick(String onclick);
@@ -82,25 +90,44 @@ public interface FluentHtmlBody<T extends FluentHtmlBody>
     public default T role(String role) {
         setRole(role); return (T) this;
     }
+    public default T rolex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "role", expression); return (T) this;
+    }
 
     public void setStyle(String style);
     public default T style(String style) {
         setStyle(style); return (T) this;
+    }
+    public default T stylex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "style", expression); return (T) this;
     }
 
     public void setStyleClass(String styleClass);
     public default T styleClass(String styleClass) {
         setStyleClass(styleClass); return (T) this;
     }
+    public default T styleClassx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "styleClass", expression); return (T) this;
+    }
 
     public void setTitle(String title);
     public default T title(String title) {
         setTitle(title); return (T) this;
+    }
+    public default T titlex(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "title", expression); return (T) this;
     }
 
     public void setXmlns(String xmlns);
     public default T xmlns(String xmlns) {
         setXmlns(xmlns); return (T) this;
     }
+    public default T xmlnsx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "xmlns", expression); return (T) this;
+    }
 }
-

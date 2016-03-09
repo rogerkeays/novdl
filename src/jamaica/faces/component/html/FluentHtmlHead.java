@@ -12,15 +12,27 @@ public interface FluentHtmlHead<T extends FluentHtmlHead>
     public default T dir(String dir) {
         setDir(dir); return (T) this;
     }
+    public default T dirx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "dir", expression); return (T) this;
+    }
 
     public void setLang(String lang);
     public default T lang(String lang) {
         setLang(lang); return (T) this;
     }
+    public default T langx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "lang", expression); return (T) this;
+    }
 
     public void setXmlns(String xmlns);
     public default T xmlns(String xmlns) {
         setXmlns(xmlns); return (T) this;
+    }
+    public default T xmlnsx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "xmlns", expression); return (T) this;
     }
 }
 

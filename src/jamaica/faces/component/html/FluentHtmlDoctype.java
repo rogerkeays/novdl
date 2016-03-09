@@ -12,15 +12,27 @@ public interface FluentHtmlDoctype<T extends FluentHtmlDoctype>
     public default T public0(String _public) {
         setPublic(_public); return (T) this;
     }
+    public default T publicx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "public", expression); return (T) this;
+    }
 
     public void setRootElement(String rootElement);
     public default T rootElement(String rootElement) {
         setRootElement(rootElement); return (T) this;
     }
+    public default T rootElementx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "rootElement", expression); return (T) this;
+    }
 
     public void setSystem(String system);
     public default T system(String system) {
         setSystem(system); return (T) this;
+    }
+    public default T systemx(String expression) {
+        set_value_expression(getFacesContext(), (UIComponent) this,
+                "system", expression); return (T) this;
     }
 }
 
