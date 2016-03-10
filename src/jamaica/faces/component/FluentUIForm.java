@@ -12,14 +12,12 @@ import javax.faces.context.FacesContext;
 public interface FluentUIForm<T extends FluentUIForm> 
             extends FluentUIComponent<T> {
 
-    public FacesContext getFacesContext();
-
     public void setPrependId(boolean prependId);
     public default T prependId(boolean prependId) {
         setPrependId(prependId); return (T) this;
     }
     public default T prependIdx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "prependId", expression); return (T) this;
     }
 }

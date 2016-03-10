@@ -13,14 +13,12 @@ import javax.faces.event.ActionListener;
 public interface FluentUICommand<T extends FluentUICommand> extends 
             FluentUIComponent<T>, FluentActionSource2<T> {
 
-    public FacesContext getFacesContext();
-
     public void setValue(Object value);
     public default T value(Object value) {
         setValue(value); return (T) this; 
     }
     public default T valuex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "value", expression); return (T) this;
     }
 }

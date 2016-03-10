@@ -8,16 +8,14 @@ import javax.faces.context.FacesContext;
  * This interface adds fluent methods on top of the standard methods.
  */
 public interface FluentUISelectItem<T extends FluentUISelectItem> extends 
-            FluentUIInput<T> {
-
-    public FacesContext getFacesContext();
+            FluentUIComponent<T> {
 
     public void setItemDescription(String itemDescription);
     public default T itemDescription(String itemDescription) {
         setItemDescription(itemDescription); return (T) this;
     }
     public default T itemDescriptionx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "itemDescription", expression); return (T) this;
     }
 
@@ -26,7 +24,7 @@ public interface FluentUISelectItem<T extends FluentUISelectItem> extends
         setItemDisabled(itemDisabled); return (T) this;
     }
     public default T itemDisabledx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "itemDisabled", expression); return (T) this;
     }
 
@@ -35,7 +33,7 @@ public interface FluentUISelectItem<T extends FluentUISelectItem> extends
         setItemEscaped(itemEscaped); return (T) this;
     }
     public default T itemEscapedx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "itemEscaped", expression); return (T) this;
     }
 
@@ -44,7 +42,7 @@ public interface FluentUISelectItem<T extends FluentUISelectItem> extends
         setItemLabel(itemLabel); return (T) this;
     }
     public default T itemLabelx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "itemLabel", expression); return (T) this;
     }
 
@@ -53,7 +51,7 @@ public interface FluentUISelectItem<T extends FluentUISelectItem> extends
         setItemValue(itemValue); return (T) this;
     }
     public default T itemValuex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "itemValue", expression); return (T) this;
     }
 
@@ -62,7 +60,7 @@ public interface FluentUISelectItem<T extends FluentUISelectItem> extends
         setNoSelectionOption(noSelectionOption); return (T) this;
     }
     public default T noSelectionOptionx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "noSelectionOption", expression); return (T) this;
     }
 
@@ -71,7 +69,7 @@ public interface FluentUISelectItem<T extends FluentUISelectItem> extends
         setValue(value); return (T) this;
     }
     public default T valuex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "value", expression); return (T) this;
     }
 }

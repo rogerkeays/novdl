@@ -13,7 +13,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setAccesskey(accesskey); return (T) this;
     }
     public default T accesskeyx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "accesskey", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setCharset(charset); return (T) this;
     }
     public default T charsetx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "charset", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setCoords(coords); return (T) this;
     }
     public default T coordsx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "coords", expression); return (T) this;
     }
 
@@ -40,7 +40,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -49,7 +49,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setDisabled(disabled); return (T) this;
     }
     public default T disabledx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "disabled", expression); return (T) this;
     }
 
@@ -58,7 +58,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setFragment(fragment); return (T) this;
     }
     public default T fragmentx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "fragment", expression); return (T) this;
     }
 
@@ -67,7 +67,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setHreflang(hreflang); return (T) this;
     }
     public default T hreflangx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "hreflang", expression); return (T) this;
     }
 
@@ -76,7 +76,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -85,7 +85,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnblur(onblur); return (T) this;
     }
     public default T onblurx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onblur", expression); return (T) this;
     }
 
@@ -94,7 +94,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnclick(onclick); return (T) this;
     }
     public default T onclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onclick", expression); return (T) this;
     }
 
@@ -103,7 +103,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOndblclick(ondblclick); return (T) this;
     }
     public default T ondblclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "ondblclick", expression); return (T) this;
     }
 
@@ -112,7 +112,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnfocus(onfocus); return (T) this;
     }
     public default T onfocusx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onfocus", expression); return (T) this;
     }
 
@@ -121,7 +121,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnkeydown(onkeydown); return (T) this;
     }
     public default T onkeydownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeydown", expression); return (T) this;
     }
 
@@ -130,7 +130,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnkeypress(onkeypress); return (T) this;
     }
     public default T onkeypressx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeypress", expression); return (T) this;
     }
 
@@ -139,7 +139,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnkeyup(onkeyup); return (T) this;
     }
     public default T onkeyupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeyup", expression); return (T) this;
     }
 
@@ -148,7 +148,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnmousedown(onmousedown); return (T) this;
     }
     public default T onmousedownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousedown", expression); return (T) this;
     }
 
@@ -157,7 +157,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnmousemove(onmousemove); return (T) this;
     }
     public default T onmousemovex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousemove", expression); return (T) this;
     }
 
@@ -166,7 +166,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnmouseout(onmouseout); return (T) this;
     }
     public default T onmouseoutx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseout", expression); return (T) this;
     }
 
@@ -175,7 +175,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnmouseover(onmouseover); return (T) this;
     }
     public default T onmouseoverx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseover", expression); return (T) this;
     }
 
@@ -184,7 +184,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setOnmouseup(onmouseup); return (T) this;
     }
     public default T onmouseupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseup", expression); return (T) this;
     }
 
@@ -193,7 +193,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setRel(rel); return (T) this;
     }
     public default T relx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rel", expression); return (T) this;
     }
 
@@ -202,7 +202,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setRev(rev); return (T) this;
     }
     public default T revx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rev", expression); return (T) this;
     }
 
@@ -211,7 +211,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -220,7 +220,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setShape(shape); return (T) this;
     }
     public default T shapex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "shape", expression); return (T) this;
     }
 
@@ -229,7 +229,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -238,7 +238,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setTabindex(tabindex); return (T) this;
     }
     public default T tabindexx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "tabindex", expression); return (T) this;
     }
 
@@ -247,7 +247,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setTarget(target); return (T) this;
     }
     public default T targetx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "target", expression); return (T) this;
     }
 
@@ -256,7 +256,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 
@@ -265,7 +265,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setType(type); return (T) this;
     }
     public default T typex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "type", expression); return (T) this;
     }
 
@@ -274,7 +274,7 @@ public interface FluentHtmlOutputLink<T extends FluentHtmlOutputLink>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 }

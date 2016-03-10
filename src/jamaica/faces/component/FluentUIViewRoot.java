@@ -13,8 +13,6 @@ import javax.faces.context.FacesContext;
 public interface FluentUIViewRoot<T extends FluentUIViewRoot> extends 
             FluentUIComponent<T> {
 
-    public FacesContext getFacesContext();
-
     public void setAfterPhaseListener(MethodExpression newAfterPhase);
     public default T afterPhaseListener(MethodExpression newAfterPhase) {
         setAfterPhaseListener(newAfterPhase); return (T) this;
@@ -30,7 +28,7 @@ public interface FluentUIViewRoot<T extends FluentUIViewRoot> extends
         setLocale(locale); return (T) this;
     }
     public default T localex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "locale", expression); return (T) this;
     }
 
@@ -39,7 +37,7 @@ public interface FluentUIViewRoot<T extends FluentUIViewRoot> extends
         setRenderKitId(renderKitId); return (T) this;
     }
     public default T renderKitIdx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "renderKitId", expression); return (T) this;
     }
 

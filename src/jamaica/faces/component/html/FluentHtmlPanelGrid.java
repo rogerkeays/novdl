@@ -13,7 +13,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setBgcolor(bgcolor); return (T) this;
     }
     public default T bgcolorx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "bgcolor", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setBodyrows(bodyrows); return (T) this;
     }
     public default T bodyrowsx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "bodyrows", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setBorder(border); return (T) this;
     }
     public default T borderx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "border", expression); return (T) this;
     }
 
@@ -40,7 +40,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setCaptionClass(captionClass); return (T) this;
     }
     public default T captionClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "captionClass", expression); return (T) this;
     }
 
@@ -49,7 +49,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setCaptionStyle(captionStyle); return (T) this;
     }
     public default T captionStylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "captionStyle", expression); return (T) this;
     }
 
@@ -58,7 +58,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setCellpadding(cellpadding); return (T) this;
     }
     public default T cellpaddingx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "cellpadding", expression); return (T) this;
     }
 
@@ -67,7 +67,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setCellspacing(cellspacing); return (T) this;
     }
     public default T cellspacingx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "cellspacing", expression); return (T) this;
     }
 
@@ -76,7 +76,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setColumnClasses(columnClasses); return (T) this;
     }
     public default T columnClassesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "columnClasses", expression); return (T) this;
     }
 
@@ -85,7 +85,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setColumns(columns); return (T) this;
     }
     public default T columnsx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "columns", expression); return (T) this;
     }
 
@@ -94,7 +94,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -103,7 +103,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setFooterClass(footerClass); return (T) this;
     }
     public default T footerClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "footerClass", expression); return (T) this;
     }
 
@@ -112,7 +112,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setFrame(frame); return (T) this;
     }
     public default T framex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "frame", expression); return (T) this;
     }
 
@@ -121,7 +121,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setHeaderClass(headerClass); return (T) this;
     }
     public default T headerClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "headerClass", expression); return (T) this;
     }
 
@@ -130,7 +130,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -139,7 +139,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnclick(onclick); return (T) this;
     }
     public default T onclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onclick", expression); return (T) this;
     }
 
@@ -148,7 +148,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOndblclick(ondblclick); return (T) this;
     }
     public default T ondblclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "ondblclick", expression); return (T) this;
     }
 
@@ -157,7 +157,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnkeydown(onkeydown); return (T) this;
     }
     public default T onkeydownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeydown", expression); return (T) this;
     }
 
@@ -166,7 +166,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnkeypress(onkeypress); return (T) this;
     }
     public default T onkeypressx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeypress", expression); return (T) this;
     }
 
@@ -175,7 +175,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnkeyup(onkeyup); return (T) this;
     }
     public default T onkeyupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeyup", expression); return (T) this;
     }
 
@@ -184,7 +184,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnmousedown(onmousedown); return (T) this;
     }
     public default T onmousedownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousedown", expression); return (T) this;
     }
 
@@ -193,7 +193,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnmousemove(onmousemove); return (T) this;
     }
     public default T onmousemovex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousemove", expression); return (T) this;
     }
 
@@ -202,7 +202,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnmouseout(onmouseout); return (T) this;
     }
     public default T onmouseoutx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseout", expression); return (T) this;
     }
 
@@ -211,7 +211,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnmouseover(onmouseover); return (T) this;
     }
     public default T onmouseoverx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseover", expression); return (T) this;
     }
 
@@ -220,7 +220,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setOnmouseup(onmouseup); return (T) this;
     }
     public default T onmouseupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseup", expression); return (T) this;
     }
 
@@ -229,7 +229,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -238,7 +238,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setRowClasses(rowClasses); return (T) this;
     }
     public default T rowClassesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rowClasses", expression); return (T) this;
     }
 
@@ -247,7 +247,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setRules(rules); return (T) this;
     }
     public default T rulesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rules", expression); return (T) this;
     }
 
@@ -256,7 +256,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -265,7 +265,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 
@@ -274,7 +274,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setSummary(summary); return (T) this;
     }
     public default T summaryx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "summary", expression); return (T) this;
     }
 
@@ -283,7 +283,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 
@@ -292,7 +292,7 @@ public interface FluentHtmlPanelGrid<T extends FluentHtmlPanelGrid>
         setWidth(width); return (T) this;
     }
     public default T widthx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "width", expression); return (T) this;
     }
 

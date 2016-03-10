@@ -13,7 +13,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setAccesskey(accesskey); return (T) this;
     }
     public default T accesskeyx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "accesskey", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setAlt(alt); return (T) this;
     }
     public default T altx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "alt", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setAutocomplete(autocomplete); return (T) this;
     }
     public default T autocompletex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "autocomplete", expression); return (T) this;
     }
 
@@ -40,7 +40,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -49,7 +49,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setDisabled(disabled); return (T) this;
     }
     public default T disabledx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "disabled", expression); return (T) this;
     }
 
@@ -58,7 +58,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setLabel(label); return (T) this;
     }
     public default T labelx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "label", expression); return (T) this;
     }
 
@@ -67,7 +67,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -76,7 +76,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setMaxlength(maxlength); return (T) this;
     }
     public default T maxlengthx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "maxlength", expression); return (T) this;
     }
 
@@ -85,7 +85,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnblur(onblur); return (T) this;
     }
     public default T onblurx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onblur", expression); return (T) this;
     }
 
@@ -94,7 +94,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnchange(onchange); return (T) this;
     }
     public default T onchangex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onchange", expression); return (T) this;
     }
 
@@ -103,7 +103,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnclick(onclick); return (T) this;
     }
     public default T onclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onclick", expression); return (T) this;
     }
 
@@ -112,7 +112,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOndblclick(ondblclick); return (T) this;
     }
     public default T ondblclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "ondblclick", expression); return (T) this;
     }
 
@@ -121,7 +121,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnfocus(onfocus); return (T) this;
     }
     public default T onfocusx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onfocus", expression); return (T) this;
     }
 
@@ -130,7 +130,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnkeydown(onkeydown); return (T) this;
     }
     public default T onkeydownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeydown", expression); return (T) this;
     }
 
@@ -139,7 +139,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnkeypress(onkeypress); return (T) this;
     }
     public default T onkeypressx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeypress", expression); return (T) this;
     }
 
@@ -148,7 +148,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnkeyup(onkeyup); return (T) this;
     }
     public default T onkeyupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeyup", expression); return (T) this;
     }
 
@@ -157,7 +157,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnmousedown(onmousedown); return (T) this;
     }
     public default T onmousedownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousedown", expression); return (T) this;
     }
 
@@ -166,7 +166,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnmousemove(onmousemove); return (T) this;
     }
     public default T onmousemovex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousemove", expression); return (T) this;
     }
 
@@ -175,7 +175,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnmouseout(onmouseout); return (T) this;
     }
     public default T onmouseoutx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseout", expression); return (T) this;
     }
 
@@ -184,7 +184,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnmouseover(onmouseover); return (T) this;
     }
     public default T onmouseoverx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseover", expression); return (T) this;
     }
 
@@ -193,7 +193,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnmouseup(onmouseup); return (T) this;
     }
     public default T onmouseupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseup", expression); return (T) this;
     }
 
@@ -202,7 +202,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setOnselect(onselect); return (T) this;
     }
     public default T onselectx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onselect", expression); return (T) this;
     }
 
@@ -211,7 +211,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setReadonly(readonly); return (T) this;
     }
     public default T readonlyx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "readonly", expression); return (T) this;
     }
 
@@ -220,7 +220,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -229,7 +229,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setSize(size); return (T) this;
     }
     public default T sizex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "size", expression); return (T) this;
     }
 
@@ -238,7 +238,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -247,7 +247,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 
@@ -256,7 +256,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setTabindex(tabindex); return (T) this;
     }
     public default T tabindexx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "tabindex", expression); return (T) this;
     }
 
@@ -265,7 +265,7 @@ public interface FluentHtmlInputText<T extends FluentHtmlInputText>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 }

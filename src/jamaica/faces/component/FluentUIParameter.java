@@ -10,14 +10,12 @@ import javax.faces.context.FacesContext;
 public interface FluentUIParameter<T extends FluentUIParameter> extends 
             FluentUIComponent<T> {
 
-    public FacesContext getFacesContext();
-
     public void setDisable(boolean disable);
     public default T disable(boolean disable) {
         setDisable(disable); return (T) this;
     }
     public default T disablex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "disable", expression); return (T) this;
     }
 
@@ -26,7 +24,7 @@ public interface FluentUIParameter<T extends FluentUIParameter> extends
         setName(name); return (T) this;
     }
     public default T namex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "name", expression); return (T) this;
     }
 
@@ -35,7 +33,7 @@ public interface FluentUIParameter<T extends FluentUIParameter> extends
         setValue(value); return (T) this;
     }
     public default T valuex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "value", expression); return (T) this;
     }
 }

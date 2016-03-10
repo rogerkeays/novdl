@@ -13,8 +13,6 @@ import javax.faces.event.ActionListener;
 public interface FluentActionSource<T extends FluentActionSource> 
             extends ActionSource {
 
-    public FacesContext getFacesContext();
-
     public default T actionListener(ActionListener listener) { 
         addActionListener(listener); return (T) this; 
     }
@@ -23,7 +21,7 @@ public interface FluentActionSource<T extends FluentActionSource>
         setImmediate(immediate); return (T) this; 
     }
     public default T immediatex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "immediate", expression); return (T) this;
     }
 }

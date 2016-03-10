@@ -11,14 +11,12 @@ import javax.faces.context.FacesContext;
 public interface FluentUISelectBoolean<T extends FluentUISelectBoolean> extends 
             FluentUIInput<T> {
 
-    public FacesContext getFacesContext();
-
     public void setSelected(boolean selected);
     public default T selected(boolean selected) {
         setSelected(selected); return (T) this;
     }
     public default T selectedx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "selected", expression); return (T) this;
     }
 }

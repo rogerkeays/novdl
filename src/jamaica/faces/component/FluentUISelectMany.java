@@ -10,14 +10,12 @@ import javax.faces.context.FacesContext;
 public interface FluentUISelectMany<T extends FluentUISelectMany> extends 
             FluentUIInput<T> {
 
-    public FacesContext getFacesContext();
-
     public void setSelectedValues(Object[] selectedValues);
     public default T selectedValues(Object[] selectedValues) {
         setSelectedValues(selectedValues); return (T) this;
     }
     public default T selectedValuesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "selectedValues", expression); return (T) this;
     }
 }

@@ -13,7 +13,7 @@ public interface FluentHtmlColumn<T extends FluentHtmlColumn>
         setFooterClass(footerClass); return (T) this;
     }
     public default T footerClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "footerClass", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlColumn<T extends FluentHtmlColumn>
         setHeaderClass(headerClass); return (T) this;
     }
     public default T headerClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "headerClass", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlColumn<T extends FluentHtmlColumn>
         setRowHeader(rowHeader); return (T) this;
     }
     public default T rowHeaderx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rowHeader", expression); return (T) this;
     }
 }

@@ -14,8 +14,6 @@ import javax.faces.convert.Converter;
 public interface FluentValueHolder<T extends FluentValueHolder> 
         extends ValueHolder {
 
-    public FacesContext getFacesContext();
-
     public default T converter(Converter converter) {
         setConverter(converter); return (T) this;
     }
@@ -24,7 +22,7 @@ public interface FluentValueHolder<T extends FluentValueHolder>
         setValue(value); return (T) this;
     }
     public default T valuex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "value", expression); return (T) this;
     }
 }

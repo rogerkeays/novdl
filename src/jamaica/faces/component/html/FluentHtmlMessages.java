@@ -13,7 +13,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setErrorClass(errorClass); return (T) this;
     }
     public default T errorClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "errorClass", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setErrorStyle(errorStyle); return (T) this;
     }
     public default T errorStylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "errorStyle", expression); return (T) this;
     }
 
@@ -40,7 +40,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setFatalClass(fatalClass); return (T) this;
     }
     public default T fatalClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "fatalClass", expression); return (T) this;
     }
 
@@ -49,7 +49,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setFatalStyle(fatalStyle); return (T) this;
     }
     public default T fatalStylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "fatalStyle", expression); return (T) this;
     }
 
@@ -58,7 +58,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setInfoClass(infoClass); return (T) this;
     }
     public default T infoClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "infoClass", expression); return (T) this;
     }
 
@@ -67,7 +67,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setInfoStyle(infoStyle); return (T) this;
     }
     public default T infoStylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "infoStyle", expression); return (T) this;
     }
 
@@ -76,7 +76,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -85,7 +85,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setLayout(layout); return (T) this;
     }
     public default T layoutx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "layout", expression); return (T) this;
     }
 
@@ -94,7 +94,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -103,7 +103,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -112,7 +112,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 
@@ -121,7 +121,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 
@@ -130,7 +130,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setTooltip(tooltip); return (T) this;
     }
     public default T tooltipx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "tooltip", expression); return (T) this;
     }
 
@@ -139,7 +139,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setWarnClass(warnClass); return (T) this;
     }
     public default T warnClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "warnClass", expression); return (T) this;
     }
 
@@ -148,7 +148,7 @@ public interface FluentHtmlMessages<T extends FluentHtmlMessages>
         setWarnStyle(warnStyle); return (T) this;
     }
     public default T warnStylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "warnStyle", expression); return (T) this;
     }
 }

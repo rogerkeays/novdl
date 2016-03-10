@@ -11,14 +11,12 @@ import javax.faces.context.FacesContext;
 public interface FluentUIInput<T extends FluentUIInput> extends 
             FluentUIOutput<T>, FluentEditableValueHolder<T> {
 
-    public FacesContext getFacesContext();
-
     public void setConverterMessage(String message);
     public default T converterMessage(String message) {
         setConverterMessage(message); return (T) this;
     }
     public default T converterMessagex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "converterMessage", expression); return (T) this;
     }
 
@@ -27,7 +25,7 @@ public interface FluentUIInput<T extends FluentUIInput> extends
         setRequiredMessage(message); return (T) this;
     }
     public default T requiredMessagex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "requiredMessage", expression); return (T) this;
     }
 
@@ -36,7 +34,7 @@ public interface FluentUIInput<T extends FluentUIInput> extends
         setValidatorMessage(message); return (T) this;
     }
     public default T validatorMessagex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "validatorMessage", expression); return (T) this;
     }
 }

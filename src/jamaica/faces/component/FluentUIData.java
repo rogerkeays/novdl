@@ -14,14 +14,12 @@ import javax.faces.model.DataModel;
 public interface FluentUIData<T extends FluentUIData> 
             extends FluentUIComponent<T> {
 
-    public FacesContext getFacesContext();
-
     public void setFirst(int first);
     public default T first(int first) {
         setFirst(first); return (T) this; 
     }
     public default T firstx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "first", expression); return (T) this;
     }
 
@@ -40,7 +38,7 @@ public interface FluentUIData<T extends FluentUIData>
         setRowIndex(rowIndex); return (T) this; 
     }
     public default T rowIndexx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rowIndex", expression); return (T) this;
     }
 
@@ -49,7 +47,7 @@ public interface FluentUIData<T extends FluentUIData>
         setRows(rows); return (T) this; 
     }
     public default T rowsx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rows", expression); return (T) this;
     }
 
@@ -58,7 +56,7 @@ public interface FluentUIData<T extends FluentUIData>
         setRowStatePreserved(preserveComponentState); return (T) this; 
     }
     public default T rowStatePreservedx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rowStatePreserved", expression); return (T) this;
     }
 
@@ -67,7 +65,7 @@ public interface FluentUIData<T extends FluentUIData>
         setValue(value); return (T) this; 
     }
     public default T valuex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "value", expression); return (T) this;
     }
 

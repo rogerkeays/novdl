@@ -1,5 +1,6 @@
 package jamaica.faces.component;
 
+import static jamaica.faces.component.FSelectItem.f_selectItem;
 import static jamaica.faces.novdl.set_value_expression.set_value_expression;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
@@ -13,8 +14,6 @@ import javax.el.ValueExpression;
  */
 public interface FluentUIComponent<T extends FluentUIComponent> 
             extends FluentStateHolder<T> {
-
-    public FacesContext getFacesContext();
 
     public void setId(String id);
     public default T id(String id) {
@@ -31,7 +30,7 @@ public interface FluentUIComponent<T extends FluentUIComponent>
         setRendered(rendered); return (T) this; 
     }
     public default T renderedx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rendered", expression); return (T) this;
     }
 
@@ -42,9 +41,19 @@ public interface FluentUIComponent<T extends FluentUIComponent>
     }
 
     public List<UIComponent> getChildren();
-    public default T add(UIComponent... children) {
+    public default T children(UIComponent... children) {
         for (UIComponent child : children) {
             getChildren().add(child);
+        }
+        return (T) this;
+    }
+
+    // shortcut for building a UISelect of enums
+    public default T selectItems(Class<? extends Enum> e) {
+        for (Enum option : e.getEnumConstants()) {
+            getChildren().add(f_selectItem()
+                    .itemValue(option)
+                    .itemLabel(option.toString()));
         }
         return (T) this;
     }

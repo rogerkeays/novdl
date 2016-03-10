@@ -13,7 +13,7 @@ public interface FluentHtmlDoctype<T extends FluentHtmlDoctype>
         setPublic(_public); return (T) this;
     }
     public default T publicx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "public", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlDoctype<T extends FluentHtmlDoctype>
         setRootElement(rootElement); return (T) this;
     }
     public default T rootElementx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rootElement", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlDoctype<T extends FluentHtmlDoctype>
         setSystem(system); return (T) this;
     }
     public default T systemx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "system", expression); return (T) this;
     }
 }

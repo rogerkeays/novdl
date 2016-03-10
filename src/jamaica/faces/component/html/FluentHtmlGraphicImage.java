@@ -13,7 +13,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setAlt(alt); return (T) this;
     }
     public default T altx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "alt", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setHeight(height); return (T) this;
     }
     public default T heightx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "height", expression); return (T) this;
     }
 
@@ -40,7 +40,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setIsmap(ismap); return (T) this;
     }
     public default T ismapx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "ismap", expression); return (T) this;
     }
 
@@ -49,7 +49,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -58,7 +58,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setLongdesc(longdesc); return (T) this;
     }
     public default T longdescx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "longdesc", expression); return (T) this;
     }
 
@@ -67,7 +67,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnclick(onclick); return (T) this;
     }
     public default T onclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onclick", expression); return (T) this;
     }
 
@@ -76,7 +76,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOndblclick(ondblclick); return (T) this;
     }
     public default T ondblclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "ondblclick", expression); return (T) this;
     }
 
@@ -85,7 +85,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnkeydown(onkeydown); return (T) this;
     }
     public default T onkeydownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeydown", expression); return (T) this;
     }
 
@@ -94,7 +94,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnkeypress(onkeypress); return (T) this;
     }
     public default T onkeypressx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeypress", expression); return (T) this;
     }
 
@@ -103,7 +103,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnkeyup(onkeyup); return (T) this;
     }
     public default T onkeyupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeyup", expression); return (T) this;
     }
 
@@ -112,7 +112,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnmousedown(onmousedown); return (T) this;
     }
     public default T onmousedownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousedown", expression); return (T) this;
     }
 
@@ -121,7 +121,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnmousemove(onmousemove); return (T) this;
     }
     public default T onmousemovex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousemove", expression); return (T) this;
     }
 
@@ -130,7 +130,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnmouseout(onmouseout); return (T) this;
     }
     public default T onmouseoutx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseout", expression); return (T) this;
     }
 
@@ -139,7 +139,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnmouseover(onmouseover); return (T) this;
     }
     public default T onmouseoverx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseover", expression); return (T) this;
     }
 
@@ -148,7 +148,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setOnmouseup(onmouseup); return (T) this;
     }
     public default T onmouseupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseup", expression); return (T) this;
     }
 
@@ -157,7 +157,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -166,7 +166,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -175,7 +175,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 
@@ -184,7 +184,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 
@@ -193,7 +193,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setUsemap(usemap); return (T) this;
     }
     public default T usemapx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "usemap", expression); return (T) this;
     }
 
@@ -202,7 +202,7 @@ public interface FluentHtmlGraphicImage<T extends FluentHtmlGraphicImage>
         setWidth(width); return (T) this;
     }
     public default T widthx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "width", expression); return (T) this;
     }
 }

@@ -11,14 +11,12 @@ import javax.faces.context.FacesContext;
 public interface FluentUIOutcomeTarget<T extends FluentUIOutcomeTarget> extends 
             FluentUIOutput<T> {
 
-    public FacesContext getFacesContext();
-
     public void setDisableClientWindow(boolean disableClientWindow);
     public default T disableClientWindow(boolean disableClientWindow) {
         setDisableClientWindow(disableClientWindow); return (T) this;
     }
     public default T disableClientWindowx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "disableClientWindow", expression); return (T) this;
     }
 
@@ -27,7 +25,7 @@ public interface FluentUIOutcomeTarget<T extends FluentUIOutcomeTarget> extends
         setIncludeViewParams(includeViewParams); return (T) this;
     }
     public default T includeViewParamsx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "includeViewParams", expression); return (T) this;
     }
 
@@ -36,7 +34,7 @@ public interface FluentUIOutcomeTarget<T extends FluentUIOutcomeTarget> extends
         setOutcome(outcome); return (T) this;
     }
     public default T outcomex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "outcome", expression); return (T) this;
     }
 }

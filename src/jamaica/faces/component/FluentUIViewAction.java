@@ -15,7 +15,7 @@ public interface FluentUIViewAction<T extends FluentUIViewAction> extends
         setOnPostback(onPostback); return (T) this;
     }
     public default T onPostbackx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onPostback", expression); return (T) this;
     }
 
@@ -24,7 +24,7 @@ public interface FluentUIViewAction<T extends FluentUIViewAction> extends
         setPhase(phase); return (T) this;
     }
     public default T phasex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "phase", expression); return (T) this;
     }
 }

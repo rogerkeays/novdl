@@ -13,7 +13,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -22,7 +22,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setEscape(escape); return (T) this;
     }
     public default T escapex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "escape", expression); return (T) this;
     }
 
@@ -31,7 +31,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -40,7 +40,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -49,7 +49,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -58,7 +58,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 
@@ -67,7 +67,7 @@ public interface FluentHtmlOutputFormat<T extends FluentHtmlOutputFormat>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 }

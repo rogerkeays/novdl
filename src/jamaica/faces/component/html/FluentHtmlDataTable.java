@@ -1,5 +1,6 @@
 package jamaica.faces.component.html;
 
+import static jamaica.faces.component.html.HColumn.h_column;
 import static jamaica.faces.novdl.set_value_expression.set_value_expression;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
@@ -13,7 +14,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setBgcolor(bgcolor); return (T) this;
     }
     public default T bgcolorx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "bgcolor", expression); return (T) this;
     }
 
@@ -22,7 +23,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setBodyrows(bodyrows); return (T) this;
     }
     public default T bodyrowsx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "bodyrows", expression); return (T) this;
     }
 
@@ -31,7 +32,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setBorder(border); return (T) this;
     }
     public default T borderx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "border", expression); return (T) this;
     }
 
@@ -40,7 +41,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setCaptionClass(captionClass); return (T) this;
     }
     public default T captionClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "captionClass", expression); return (T) this;
     }
 
@@ -49,7 +50,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setCaptionStyle(captionStyle); return (T) this;
     }
     public default T captionStylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "captionStyle", expression); return (T) this;
     }
 
@@ -58,7 +59,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setCellpadding(cellpadding); return (T) this;
     }
     public default T cellpaddingx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "cellpadding", expression); return (T) this;
     }
 
@@ -67,7 +68,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setCellspacing(cellspacing); return (T) this;
     }
     public default T cellspacingx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "cellspacing", expression); return (T) this;
     }
 
@@ -76,7 +77,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setColumnClasses(columnClasses); return (T) this;
     }
     public default T columnClassesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "columnClasses", expression); return (T) this;
     }
 
@@ -85,7 +86,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setDir(dir); return (T) this;
     }
     public default T dirx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "dir", expression); return (T) this;
     }
 
@@ -94,7 +95,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setFooterClass(footerClass); return (T) this;
     }
     public default T footerClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "footerClass", expression); return (T) this;
     }
 
@@ -103,7 +104,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setFrame(frame); return (T) this;
     }
     public default T framex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "frame", expression); return (T) this;
     }
 
@@ -112,7 +113,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setHeaderClass(headerClass); return (T) this;
     }
     public default T headerClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "headerClass", expression); return (T) this;
     }
 
@@ -121,7 +122,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setLang(lang); return (T) this;
     }
     public default T langx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "lang", expression); return (T) this;
     }
 
@@ -130,7 +131,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnclick(onclick); return (T) this;
     }
     public default T onclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onclick", expression); return (T) this;
     }
 
@@ -139,7 +140,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOndblclick(ondblclick); return (T) this;
     }
     public default T ondblclickx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "ondblclick", expression); return (T) this;
     }
 
@@ -148,7 +149,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnkeydown(onkeydown); return (T) this;
     }
     public default T onkeydownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeydown", expression); return (T) this;
     }
 
@@ -157,7 +158,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnkeypress(onkeypress); return (T) this;
     }
     public default T onkeypressx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeypress", expression); return (T) this;
     }
 
@@ -166,7 +167,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnkeyup(onkeyup); return (T) this;
     }
     public default T onkeyupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onkeyup", expression); return (T) this;
     }
 
@@ -175,7 +176,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnmousedown(onmousedown); return (T) this;
     }
     public default T onmousedownx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousedown", expression); return (T) this;
     }
 
@@ -184,7 +185,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnmousemove(onmousemove); return (T) this;
     }
     public default T onmousemovex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmousemove", expression); return (T) this;
     }
 
@@ -193,7 +194,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnmouseout(onmouseout); return (T) this;
     }
     public default T onmouseoutx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseout", expression); return (T) this;
     }
 
@@ -202,7 +203,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnmouseover(onmouseover); return (T) this;
     }
     public default T onmouseoverx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseover", expression); return (T) this;
     }
 
@@ -211,7 +212,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setOnmouseup(onmouseup); return (T) this;
     }
     public default T onmouseupx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "onmouseup", expression); return (T) this;
     }
 
@@ -220,7 +221,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setRole(role); return (T) this;
     }
     public default T rolex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "role", expression); return (T) this;
     }
 
@@ -229,7 +230,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setRowClasses(rowClasses); return (T) this;
     }
     public default T rowClassesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rowClasses", expression); return (T) this;
     }
 
@@ -238,7 +239,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setRules(rules); return (T) this;
     }
     public default T rulesx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "rules", expression); return (T) this;
     }
 
@@ -247,7 +248,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setStyle(style); return (T) this;
     }
     public default T stylex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "style", expression); return (T) this;
     }
 
@@ -256,7 +257,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setStyleClass(styleClass); return (T) this;
     }
     public default T styleClassx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "styleClass", expression); return (T) this;
     }
 
@@ -265,7 +266,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setSummary(summary); return (T) this;
     }
     public default T summaryx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "summary", expression); return (T) this;
     }
 
@@ -274,7 +275,7 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setTitle(title); return (T) this;
     }
     public default T titlex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "title", expression); return (T) this;
     }
 
@@ -283,8 +284,16 @@ public interface FluentHtmlDataTable<T extends FluentHtmlDataTable>
         setWidth(width); return (T) this;
     }
     public default T widthx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "width", expression); return (T) this;
+    }
+
+    // automatically wrap the given children in h_columns
+    public default T columns(UIComponent... children) {
+        for (UIComponent child : children) {
+            getChildren().add(h_column().children(child));
+        }
+        return (T) this;
     }
 }
 

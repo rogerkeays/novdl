@@ -15,8 +15,6 @@ import javax.faces.validator.Validator;
 public interface FluentEditableValueHolder<T extends FluentEditableValueHolder> 
         extends EditableValueHolder {
 
-    public FacesContext getFacesContext();
-
     public default T validator(Validator validator) {
         addValidator(validator); return (T) this;
     }
@@ -29,7 +27,7 @@ public interface FluentEditableValueHolder<T extends FluentEditableValueHolder>
         setImmediate(immediate); return (T) this;
     }
     public default T immediatex(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "immediate", expression); return (T) this;
     }
 
@@ -37,7 +35,7 @@ public interface FluentEditableValueHolder<T extends FluentEditableValueHolder>
         setRequired(required); return (T) this;
     }
     public default T requiredx(String expression) {
-        set_value_expression(getFacesContext(), (UIComponent) this,
+        set_value_expression(FacesContext.getCurrentInstance(), (UIComponent) this,
                 "required", expression); return (T) this;
     }
 }
