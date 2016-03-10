@@ -21,13 +21,13 @@ public class get_view_class_name {
 
 
     @Test
-    public static void view_class_name_matches_view_id() {
+    public static void test_view_class_name_matches_view_id() {
         assertEquals("com.bar.foo.Class", 
                 get_view_class_name("/com/bar/foo/Class.xhtml"));
     }
 
     @Test
-    public static void jsp_path_mapping_is_accepted() {
+    public static void test_jsp_path_mapping_is_accepted() {
         assertEquals("com.bar.foo.Class", 
                 get_view_class_name("/com/bar/foo/Class.jsp"));
     }

@@ -1,7 +1,7 @@
 package jamaica.faces.novdl;
 
 import com.sun.faces.application.ApplicationAssociate;
-import jamaica.core.io.UncheckedIOException;
+import java.io.UncheckedIOException;
 import java.io.IOException;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
