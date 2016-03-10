@@ -8,11 +8,35 @@
   <artifactId>novdl</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
+
   <name>NoVDL</name>
+  <description>Write your JSF views in pure Java</description>
+  <url>https://rogerkeays.com/novdl</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Roger Keays</name>
+      <email>roger.keays@ninthave.com.au</email>
+      <organization>Ninth Avenue Software</organization>
+      <organizationUrl>http://www.ninthavenue.com.au</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git@github.com:rogerkeays/novdl</connection>
+    <developerConnection>scm:git:git@github.com:rogerkeays/novdl</developerConnection>
+    <url>git@github.com:rogerkeays/novdl.git</url>
+  </scm>
 
   <dependencies>
- 
-    <!-- java layer -->
 
     <!-- network layer -->
     <dependency>
