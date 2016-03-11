@@ -76,7 +76,7 @@ is routed to the class
     com.example.Demo
     
 If you need different functionality, you could rewrite get_view_class_name()
-and rebuild NoVDL. If there is enough demand, I'll make this function
+and recompile NoVDL. If there is enough demand, I'll make this function
 configurable.
 
 ## Value Expressions
@@ -145,7 +145,7 @@ your view. e.g.
     public abstract class MasterView implements Activity {
 
         @Override
-        public void build_view(FacesContext faces, UIViewRoot root) {
+        public void buildView(FacesContext faces, UIViewRoot root) {
             root.getChildren().add(build_head(faces));
             root.getChildren().add(
                 h_body().children(
@@ -163,7 +163,7 @@ Use the function
 
     build_from_facelet(faces, root, template);
 
-to execute a Facelet from your build_view function. Inside that template,
+to execute a Facelet from your buildView function. Inside that template,
 you'll have to reference the components you built using NoVDL. e.g.
  
     <h2>Current Data</h2>
@@ -193,5 +193,9 @@ default view decoration language (normally Facelets).
 
 ## Articles about NoVDL
 
-https://rogerkeays.com/novdl-write-your-jsf-views-in-pure-java
+[NoVDL: Write your JSF views in pure Java](https://rogerkeays.com/novdl-write-your-jsf-views-in-pure-java)
+
+## Get the Source
+
+https://github.com/rogerkeays/novdl
 
