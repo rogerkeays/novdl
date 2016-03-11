@@ -176,13 +176,14 @@ you'll have to reference the components you built using NoVDL. e.g.
 ## Editing Views on the Fly
 
 Facelets lets you edit views on the fly without recompiling or restarting the
-application.
+application. You should be able to use [HotSwapAgent](http://www.hotswapagent.org/)
+or JRebel to achieve the same thing with NoVDL.
 
 ## Installation
 
-NoVDL should automatically be detected when you add the following dependency.
-View IDs that cannot be mapped to Java implementations will fall back on the
-default view decoration language (normally Facelets).
+NoVDL is automatically detected when you add the following dependency. View
+IDs that cannot be mapped to Java implementations will fall back on the default
+view decoration language (normally Facelets).
 
     <dependency>
       <groupId>jamaica.faces</groupId>
