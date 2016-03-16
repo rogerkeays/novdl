@@ -7,7 +7,7 @@
   <groupId>au.com.ninthavenue.jamaica.faces</groupId>
   <artifactId>novdl</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0.1</version>
 
   <name>NoVDL</name>
   <description>Write your JSF views in pure Java</description>
