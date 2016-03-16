@@ -186,7 +186,7 @@ IDs that cannot be mapped to Java implementations will fall back on the default
 view decoration language (normally Facelets).
 
     <dependency>
-      <groupId>jamaica.faces</groupId>
+      <groupId>au.com.ninthavenue.jamaica.faces</groupId>
       <artifactId>novdl</artifactId>
       <packaging>jar</packaging>
       <version>1.0</version>
