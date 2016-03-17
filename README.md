@@ -192,6 +192,8 @@ view decoration language (normally Facelets).
       <version>1.0</version>
     </dependency>
 
+Note: NoVDL requires Java 8.
+
 ## Articles about NoVDL
 
 [NoVDL: Write your JSF views in pure Java](https://rogerkeays.com/novdl-write-your-jsf-views-in-pure-java)
