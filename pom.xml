@@ -126,7 +126,7 @@
         </configuration>
       </plugin>
 
-      <!-- maven central requirements -->
+      <!-- maven central requirements 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
@@ -167,6 +167,7 @@
           </execution>
         </executions>
       </plugin>
+      -->
     </plugins>
     
     <!-- 

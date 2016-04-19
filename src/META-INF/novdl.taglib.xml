@@ -8,6 +8,10 @@
   <namespace>http://www.ninthavenue.com.au/novdl</namespace>
   <composite-library-name>novdl</composite-library-name>
   <tag>
+    <tag-name>attach</tag-name>
+    <source>tags/attach.xhtml</source>
+  </tag>
+  <tag>
     <tag-name>composite</tag-name>
     <handler-class>jamaica.faces.novdl.CompositeTag</handler-class>
   </tag>

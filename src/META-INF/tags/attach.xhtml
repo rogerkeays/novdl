@@ -1,0 +1,18 @@
+<ui:component xmlns="http://www.w3.org/1999/xhtml"
+              xmlns:ui="http://java.sun.com/jsf/facelets"
+              xmlns:c="http://java.sun.com/jsp/jstl/core"
+              xmlns:f="http://java.sun.com/jsf/core"
+              xmlns:h="http://java.sun.com/jsf/html"
+              xmlns:n="http://www.ninthavenue.com.au/novdl">
+
+  <!-- 
+    The purpose of this template is simply to wrap composite components 
+    inside a real UI component. Attaching new components to the tree is
+    way more complicated than simply creating the component and adding 
+    it to the parent (see http://grepcode.com/file/repo1.maven.org/maven2/com.sun.faces/jsf-impl/2.2.0/com/sun/faces/facelets/tag/jsf/ComponentTagHandlerDelegateImpl.java?av=f).
+
+    This workaround forces facelets to attach the ui:component so our
+    composite component is always an only child.
+  -->
+  <n:composite component="${component}"/>
+</ui:component>
