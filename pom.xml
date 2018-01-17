@@ -48,6 +48,12 @@
   </distributionManagement>
 
   <dependencies>
+    <dependency>
+      <groupId>jamaica</groupId>
+      <artifactId>core</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
 
     <!-- network layer -->
     <dependency>
@@ -55,6 +61,12 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jamaica</groupId>
+      <artifactId>servlet</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
     </dependency>
 
     <!--
