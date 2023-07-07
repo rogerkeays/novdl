@@ -166,17 +166,17 @@ Use the function
 to execute a Facelet from your buildView function. Inside that template,
 you'll have to reference the components you built using NoVDL. e.g.
  
-   <ui:decorate xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:f="http://java.sun.com/jsf/core"
-                xmlns:h="http://java.sun.com/jsf/html"
-                xmlns:n="http://www.ninthavenue.com.au/novdl"
-                template="/master.xhtml">
- 
-      <!-- datagrid is prebuilt with NoVDL -->
-      <h2>Current Data</h2>
-      <n:attach component="${bean.your_factory_method_here()}"/>
-   </ui:decorate>
+    <ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:ui="http://java.sun.com/jsf/facelets"
+                 xmlns:f="http://java.sun.com/jsf/core"
+                 xmlns:h="http://java.sun.com/jsf/html"
+                 xmlns:n="http://www.ninthavenue.com.au/novdl"
+                 template="/master.xhtml">
+  
+       <!-- datagrid is prebuilt with NoVDL -->
+       <h2>Current Data</h2>
+       <n:attach component="${bean.your_factory_method_here()}"/>
+    </ui:decorate>
 
 ## Editing Views on the Fly
 
