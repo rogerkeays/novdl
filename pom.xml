@@ -48,12 +48,6 @@
   </distributionManagement>
 
   <dependencies>
-    <dependency>
-      <groupId>jamaica</groupId>
-      <artifactId>core</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
 
     <!-- network layer -->
     <dependency>
