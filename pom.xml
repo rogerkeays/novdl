@@ -7,7 +7,7 @@
   <groupId>au.com.ninthavenue.jamaica.faces</groupId>
   <artifactId>novdl</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
 
   <name>NoVDL</name>
   <description>Write your JSF views in pure Java</description>
@@ -132,7 +132,7 @@
         </configuration>
       </plugin>
 
-      <!-- maven central requirements
+      <!-- maven central requirements -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
@@ -173,7 +173,6 @@
           </execution>
         </executions>
       </plugin>
-      -->
     </plugins>
 
     <!--
